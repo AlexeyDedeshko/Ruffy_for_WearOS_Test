@@ -17,6 +17,13 @@ android {
             useSupportLibrary = true
         }
 
+        // Внутри секции android
+            sourceSets {
+                getByName("main") {
+                    aidl.srcDirs("src/main/aidl")
+                }
+            }
+
     }
 
     buildTypes {
@@ -49,7 +56,12 @@ android {
 }
 
 dependencies {
+    // Зависимости для AndroidX
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.fragment:fragment:1.6.1")
+    implementation("com.google.android.material:material:1.8.0")
 
+    //Зависимости для другого
     implementation(libs.play.services.wearable)
     implementation(platform(libs.compose.bom))
     implementation(libs.ui)
@@ -68,3 +80,4 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 }
+
