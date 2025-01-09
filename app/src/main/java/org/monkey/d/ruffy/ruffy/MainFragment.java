@@ -55,7 +55,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     private ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(3);
 
     public boolean mServiceBound = false;
-    public IRuffyService mBoundService;
+    public IRuffyServiceInterface mBoundService;
 
     public MainFragment() {
     }
@@ -69,7 +69,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            mBoundService = IRuffyService.Stub.asInterface(service);
+            mBoundService = IRuffyService.asInterface(service); // меняю для теста, было IRuffyService.Stub.asInterface(service)
             mServiceBound = true;
         }
     };
