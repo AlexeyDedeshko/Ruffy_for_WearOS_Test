@@ -26,8 +26,6 @@ import android.widget.TextView;
 
 import com.example.ruffyforwearostest.R;
 
-import org.monkey.d.ruffy.ruffy.driver.IRuffyService;
-import org.monkey.d.ruffy.ruffy.driver.IRuffyServiceInterface;
 import org.monkey.d.ruffy.ruffy.driver.Ruffy;
 import org.monkey.d.ruffy.ruffy.driver.display.Menu;
 import org.monkey.d.ruffy.ruffy.driver.display.MenuAttribute;
