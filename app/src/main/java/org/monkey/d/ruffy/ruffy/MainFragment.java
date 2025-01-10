@@ -24,7 +24,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.monkey.d.ruffy.ruffy.driver.IRTHandler.Stub;
+import com.example.ruffyforwearostest.R;
+
 import org.monkey.d.ruffy.ruffy.driver.IRuffyService;
 import org.monkey.d.ruffy.ruffy.driver.IRuffyServiceInterface;
 import org.monkey.d.ruffy.ruffy.driver.Ruffy;
