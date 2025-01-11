@@ -13,4 +13,5 @@ public interface IRuffyServiceInterface extends IInterface {
     void someMethod() throws RemoteException;
 
     void setHandler(IRTHandler handler) throws RemoteException;
+
 }
